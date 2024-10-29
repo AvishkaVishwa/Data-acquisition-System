@@ -1,13 +1,11 @@
 # STM32 Data Acquisition System
 
 ## Project Overview
-This project is a Data Acquisition (DAQ) system built using an STM32 microcontroller and a custom-designed USB to TTL converter circuit featuring the CH340 IC. The DAQ system captures data from sensors connected to the STM32, and displays it using **LabVIEW** software on a computer. The project is designed to be a reliable and cost-effective solution for real-time data acquisition and visualization.
+This project is a Data Acquisition (DAQ) system built using an STM32 microcontroller and a custom-designed USB to TTL converter circuit featuring the CH340 IC. The DAQ system captures data from sensors connected to the STM32, and displays it using ** software on a computer. The project is designed to be a reliable and cost-effective solution for real-time data acquisition and visualization.
 
 ## Features
 - **Custom USB to TTL Interface**: Uses CH340 IC for reliable communication.
 - **Real-Time Data Acquisition**: Collects and processes sensor data with STM32.
-- **LabVIEW Visualization**: Displays acquired data using LabVIEW software for real-time monitoring.
-- **Status LEDs**: Indicates data transmission and reception using LEDs.
 
 ## Schematic Design
 The schematic for the USB to TTL converter circuit using the CH340 IC is as shown below:
