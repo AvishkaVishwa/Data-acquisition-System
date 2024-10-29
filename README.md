@@ -12,7 +12,7 @@ This project is a Data Acquisition (DAQ) system built using an STM32 microcontro
 ## Schematic Design
 The schematic for the USB to TTL converter circuit using the CH340 IC is as shown below:
 
-<img src ="USB to TTL.png">
+<img src ="/USB to TTL Converter/USB to TTL.png">
 
 ## Setup Instructions
 
