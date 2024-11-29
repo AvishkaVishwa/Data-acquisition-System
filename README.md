@@ -2,6 +2,9 @@
 
 ## Project Overview
 This project is a Data Acquisition (DAQ) system built using an STM32 microcontroller and a custom-designed USB to TTL converter circuit featuring the CH340 IC. The DAQ system captures data from sensors connected to the STM32, and displays it using ** software on a computer. The project is designed to be a reliable and cost-effective solution for real-time data acquisition and visualization.
+## LabVIEW 1st Test Using POT as an Analog Sensor
+
+https://github.com/user-attachments/assets/7ba26e8f-d62d-4c59-b77a-43d808ff6f97
 
 ## Features
 - **Custom USB to TTL Interface**: Uses CH340 IC for reliable communication.
