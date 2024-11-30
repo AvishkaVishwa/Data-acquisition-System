@@ -20,6 +20,11 @@ The current testing phase simulates sensor data acquisition and control using a 
 
 ## LabVIEW 1st Test Using POT as an Analog Sensor
 
+##Block_Diagram and UI 
+<img src ="/Assets/Vi2.1.png">
+
+<img src ="/Assets/VI2.png">
+
 https://github.com/user-attachments/assets/7ba26e8f-d62d-4c59-b77a-43d808ff6f97
 
 This prototype tests the feasibility of integrating sensors with LabVIEW via Arduino Uno using the LINX Toolkit.
