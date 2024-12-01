@@ -20,7 +20,7 @@ The current testing phase simulates sensor data acquisition and control using a 
 
 ## LabVIEW 1st Test Using POT as an Analog Sensor
 
-##Block_Diagram and UI 
+## Block_Diagram and UI 
 <img src ="/Assets/Vi2.1.png">
 
 <img src ="/Assets/VI2.png">
