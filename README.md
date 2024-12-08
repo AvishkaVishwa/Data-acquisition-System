@@ -1,152 +1,113 @@
-# Data Acquisition System
-# Greenhouse Monitoring System - Testing Phase
+## Data Acqusition System
 
-This project is an IoT-based greenhouse monitoring system that uses LabVIEW and Arduino Uno for real-time data acquisition, control, and visualization. Currently, the system is in the **testing phase**, and the final setup will integrate multiple sensors to monitor and optimize greenhouse conditions.
+# Greenhouse Monitoring System
 
----
-
-## Project Overview
-The goal of this project is to build a robust greenhouse monitoring system that tracks key environmental parameters such as:
-- **Soil moisture**
-- **Air quality (using MQ-135)**
-- **Temperature and humidity (using DHT11)**
-
-The system uses **LabVIEW** for real-time data visualization and threshold-based control. It is designed to automate decision-making processes, such as triggering irrigation systems, ventilation, and other actuators, to maintain optimal growing conditions.
+## **Project Overview**
+The Greenhouse Monitoring System is an IoT-based solution that monitors and maintains optimal environmental conditions for greenhouse plants. This project utilizes Arduino Uno to collect data from multiple sensors and displays real-time information on a LabVIEW interface, enabling automatic control of fans and lights to ensure suitable conditions.
 
 ---
 
-## Testing Phase Setup
-The current testing phase simulates sensor data acquisition and control using a **temperature sensor**. The system lights up an LED when the temperature exceeds a user-defined threshold.
+## **Features**
+- Real-time monitoring of CO2, soil moisture, light intensity, temperature, and humidity.
+- Automatic control of fans and lights based on sensor readings.
+- Data visualization and control through LabVIEW.
+- Modular and scalable design for easy enhancements.
 
-## LabVIEW 1st Test Using POT as an Analog Sensor
+---
+## Testing with A potentiometer as an analog sensor
 
-## Block_Diagram and UI 
+# **Front_End**
+
 <img src ="/Assets/Vi2.1.png">
+
+# **Block_Diagram**
 
 <img src ="/Assets/VI2.png">
 
-https://github.com/user-attachments/assets/7ba26e8f-d62d-4c59-b77a-43d808ff6f97
+## **testing**
 
-This prototype tests the feasibility of integrating sensors with LabVIEW via Arduino Uno using the LINX Toolkit.
+https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 
----
-## LabVIEW final Invterface
+## **Components**
+### **Hardware**
+- Arduino Uno
+- MQ-135 (CO2 Sensor)
+- Capacitive Soil Moisture Sensor
+- LDR (Light-Dependent Resistor)
+- DHT11 (Temperature and Humidity Sensor)
+- Fan (Actuator)
+- Light Bulb (Actuator)
+- Power supply (5V DC)
+- Connecting wires and breadboard
 
-<img src ="/Assets/Block diagram.png">
-
-<img src ="/Assets/Front end.png">
-
-
-### Hardware Components
-1. **Arduino Uno**: Microcontroller for data acquisition and actuator control.
-2. **Testing Sensor (Analog Input)**: Simulates real temperature data during the testing phase.
-3. **LED**: Visual indication when a threshold value is exceeded.
-4. **Final Sensors for Integration**:
-   - Soil Moisture Sensor
-   - MQ-135 Air Quality Sensor
-   - DHT11 Temperature and Humidity Sensor
-5. **Connection Components**:
-   - Resistors
-   - Jumper Wires
-   - Breadboard or PCB
+### **Software**
+- Arduino IDE
+- LabVIEW
+  - LINX Toolkit for Arduino communication
 
 ---
 
-### Software Components
-1. **LabVIEW**: Main platform for real-time monitoring and control.
-2. **LINX Toolkit**: Enables communication between LabVIEW and Arduino.
-3. **Arduino IDE**: Used for initial configuration and uploading LINX firmware to the Arduino.
+## **System Architecture**
+1. Sensors collect environmental data.
+2. Arduino Uno processes the sensor readings and communicates them to LabVIEW via serial.
+3. LabVIEW visualizes the data and sends control signals to the actuators based on predefined thresholds.
 
 ---
 
-### Features
-- **Real-Time Monitoring**: Visualize sensor data in LabVIEW with a thermometer widget.
-- **Threshold-Based Control**: Trigger an LED when the temperature exceeds a specific value.
-- **Modular Design**: Easily integrate additional sensors in the future.
-- **User-Friendly Interface**: LabVIEW interface for monitoring and manual threshold adjustments.
+
+## **Final Product**
+
+## **Installation and Setup**
+1. **Arduino Configuration**:
+   - Connect the sensors to the respective analog and digital pins.
+   - Connect the actuators via relays to digital output pins.
+2. **LabVIEW**:
+   - Install LabVIEW and the LINX Toolkit.
+   - Open the provided `.vi` file.
+3. **Hardware Connections**:
+   - Soil Moisture Sensor: Analog Pin A0
+   - MQ-135: Analog Pin A1
+   - LDR: Analog Pin A2
+   - DHT11: Digital Pin 2
+   - Fan: Digital Pin 3
+   - Light: Digital Pin 4
 
 ---
 
-### Block Diagram
-#### Current Testing Phase Workflow:
-1. Analog sensor data is read through **Analog Pin A0** of Arduino Uno.
-2. The data is scaled in LabVIEW to represent temperature in Celsius.
-3. A comparison function checks if the temperature exceeds the threshold value.
-4. If the condition is true, LabVIEW sends a digital write signal to light up the LED.
-
-#### Future Design Workflow:
-1. Data from soil moisture, MQ-135, and DHT11 sensors will be acquired.
-2. LabVIEW will process and display the data in real-time.
-3. Thresholds for soil moisture, air quality, and temperature will trigger automated actions such as turning on a water pump, fan, or light.
+## **Threshold Conditions**
+- **Fan Activation**: If CO2 > 800 PPM or temperature > 30°C.
+- **Light Activation**: If light intensity < 300 Lux.
+- **Pump Activation**: If soil moisture < 40%.
 
 ---
 
-### LabVIEW Interface
-#### Block Diagram:
-Includes LINX Analog Read, conversion to temperature, comparison with threshold, and LINX Digital Write for LED control.
-
-#### Front Panel:
-Features a thermometer widget for temperature display, controls for serial port selection, analog channel input, and a dynamic threshold value.
-
----
-
-## Future Enhancements
-- **Sensor Integration**:
-  - Soil moisture sensor for irrigation monitoring.
-  - MQ-135 for detecting CO2 and harmful gases.
-  - DHT11 for precise temperature and humidity data.
-- **Actuator Control**:
-  - Relay-based water pump control for irrigation.
-  - Fans or vents for temperature and air quality management.
-- **Advanced Visualization**:
-  - Add multi-sensor graphs and logging capabilities in LabVIEW.
-- **IoT Integration**:
-  - Implement Blynk or MQTT for remote monitoring and control.
+## **Usage**
+1. Upload the Arduino code to the Arduino Uno using Arduino IDE.
+2. Connect the Arduino to the PC running LabVIEW.
+3. Start the LabVIEW program to begin monitoring and controlling.
+4. Stop the system using the "Stop" button in LabVIEW.
 
 ---
 
-## Getting Started
-
-### Hardware Setup
-1. Connect the Arduino Uno to your computer via USB.
-2. Wire the test sensor to **Analog Pin A0** of the Arduino.
-3. Connect an LED with a resistor to a digital pin (e.g., Pin 13).
-
-### Software Setup
-1. Install **LabVIEW** and the **LINX Toolkit**.
-2. Configure the Arduino with the LINX firmware using LabVIEW.
-3. Open the LabVIEW VI file (`Greenhouse_Monitoring_Test.vi`) and select the correct serial port.
+## **Future Enhancements**
+- Add wireless communication for remote monitoring.
+- Integrate additional sensors like pH and water level sensors.
+- Enable cloud data logging for long-term analysis.
 
 ---
 
-## How to Run the System
-1. Upload the LINX firmware to the Arduino via LabVIEW.
-2. Open the LabVIEW VI file.
-3. Select the appropriate **Serial Port** and **Analog Input Channel**.
-4. Adjust the **Threshold Value** dynamically from the LabVIEW interface.
-5. Observe the thermometer widget and LED response as the temperature changes.
+## **Author**
+- **Your Name**
+- [Your Contact Information]
 
 ---
 
-## Screenshots
-### Block Diagram
-_Add a screenshot of your LabVIEW block diagram here._
-
-### Front Panel
-_Add a screenshot of your LabVIEW front panel here._
+## **License**
+This project is licensed under the MIT License. Feel free to use and modify it for personal or educational purposes.
 
 ---
 
-## Project Status
-- **Current Phase**: Testing with a simulated temperature sensor.
-- **Next Phase**: Integration of soil moisture, MQ-135, and DHT11 sensors with full actuator control.
-
----
-
-## License
-This project is licensed under the MIT License.
-
----
-
-## Contributing
-Feel free to fork the repository, raise issues, or submit pull requests to improve this project.
+## **References**
+- Arduino Uno Documentation
+- LINX Toolkit User Guide
+- Sensor Datasheets (MQ-135, DHT11, etc.)
