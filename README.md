@@ -109,5 +109,5 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 ## **References**
 - Arduino Uno Documentation
 - LINX Toolkit User Guide
-- Sensor Datasheets (MQ-135, DHT11, etc.)
+- Sensor Datasheets (MQ-135,Capacitive Soil Moisture, LDR.)
 - Ni Commiunity
