@@ -57,6 +57,11 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 
 ## **Final Product**
 
+<img src ="/Assets/Block diagram.png">
+
+<img src ="/Assets/Front end.png">
+
+
 ## **Installation and Setup**
 1. **Arduino Configuration**:
    - Connect the sensors to the respective analog and digital pins.
