@@ -34,6 +34,8 @@ This prototype tests the feasibility of integrating sensors with LabVIEW via Ard
 
 <img src ="/Assets/Block diagram.png">
 
+<img src ="/Assets/Front end.png">
+
 
 ### Hardware Components
 1. **Arduino Uno**: Microcontroller for data acquisition and actuator control.
