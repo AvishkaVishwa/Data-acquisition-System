@@ -104,7 +104,6 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 ## **Author**
 - Avishka Vishwajith
 
-<a href ="www.linkedin.com/in/avishka-vishwa">Linkedin</a>
 ---
 
 ## **References**
