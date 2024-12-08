@@ -61,6 +61,8 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 
 <img src ="/Assets/Front end.png">
 
+<img src ="/Assets/pcb.jpg">  <img src ="/Assets/pcb2.jpg">
+
 
 ## **Installation and Setup**
 1. **Arduino Configuration**:
