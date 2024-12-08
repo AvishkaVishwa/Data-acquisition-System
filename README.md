@@ -30,6 +30,10 @@ https://github.com/user-attachments/assets/7ba26e8f-d62d-4c59-b77a-43d808ff6f97
 This prototype tests the feasibility of integrating sensors with LabVIEW via Arduino Uno using the LINX Toolkit.
 
 ---
+## LabVIEW final Invterface
+
+<img src ="/Assets/Block diagram.png">
+
 
 ### Hardware Components
 1. **Arduino Uno**: Microcontroller for data acquisition and actuator control.
