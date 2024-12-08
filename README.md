@@ -102,17 +102,13 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 ---
 
 ## **Author**
-- **Your Name**
-- [Your Contact Information]
+- Avishka Vishwajith
 
----
-
-## **License**
-This project is licensed under the MIT License. Feel free to use and modify it for personal or educational purposes.
-
+<a href ="www.linkedin.com/in/avishka-vishwa">Linkedin</a>
 ---
 
 ## **References**
 - Arduino Uno Documentation
 - LINX Toolkit User Guide
 - Sensor Datasheets (MQ-135, DHT11, etc.)
+- Ni Commiunity
