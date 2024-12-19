@@ -34,7 +34,6 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
 - MQ-135 (CO2 Sensor)
 - Capacitive Soil Moisture Sensor
 - LDR (Light-Dependent Resistor)
-- DHT11 (Temperature and Humidity Sensor)
 - Fan (Actuator)
 - Light Bulb (Actuator)
 - Power supply (5V DC)
