@@ -75,7 +75,6 @@ https://github.com/user-attachments/assets/c2f45d7e-dc11-44e3-8d79-2cd506b800e0
    - Soil Moisture Sensor: Analog Pin A0
    - MQ-135: Analog Pin A1
    - LDR: Analog Pin A2
-   - DHT11: Digital Pin 2
    - Fan: Digital Pin 3
    - Light: Digital Pin 4
 
